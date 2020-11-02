@@ -1,0 +1,192 @@
+$(document).ready(function(){
+    // $(".headermenu").click(function(){
+    //     $(".headernav").show();
+    // });
+    // $(".headermenu").click(function(){
+    //     $(".headernav").hide();
+    // });
+    $(".headermenu").click(function(){
+        $(".headernav").toggle();
+        $(".input").hide();
+    });
+    $(".headermenu").click(function(){
+        $(".menubg").toggle();
+    });
+    $(".searchopen").click(function(){
+        $(".input").toggle();
+        $(".sub1").hide();
+        $(".sub2").hide();
+        $(".sub3").hide();
+        $(".sub4").hide();
+        $(".sub5").hide();
+    });
+    $(".list1").click(function(){
+        $(".sub1").toggle();
+        $(".sub2").hide();
+        $(".sub3").hide();
+        $(".sub4").hide();
+        $(".sub5").hide();
+        $(".input").hide();
+    })
+    $(".list2").click(function(){
+        $(".sub2").toggle();
+        $(".sub1").hide();
+        $(".sub3").hide();
+        $(".sub4").hide();
+        $(".sub5").hide();
+        $(".input").hide();
+    })
+    $(".list3").click(function(){
+        $(".sub3").toggle();
+        $(".sub2").hide();
+        $(".sub1").hide();
+        $(".sub4").hide();
+        $(".sub5").hide();
+        $(".input").hide();
+    })
+    $(".list4").click(function(){
+        $(".sub4").toggle();
+        $(".sub2").hide();
+        $(".sub3").hide();
+        $(".sub1").hide();
+        $(".sub5").hide();
+        $(".input").hide();
+    })
+    $(".list5").click(function(){
+        $(".sub5").toggle();
+        $(".sub2").hide();
+        $(".sub3").hide();
+        $(".sub4").hide();
+        $(".sub1").hide();
+        $(".input").hide();
+    })
+    $(".fmenu").click(function(){
+        $(".fnav").show();
+    })
+    $(".fdown").click(function(){
+        $(".fnav").hide();
+    })
+    $(".nowopen").click(function(){
+        $(".now").show();
+        $(".kwacheon").hide();
+    })
+    $(".nowclose").click(function(){
+        $(".now").hide();
+    })
+    $(".kwacheonopen").click(function(){
+        $(".kwacheon").show();
+        $(".now").hide();
+    })
+    $(".kwacheonclose").click(function(){
+        $(".kwacheon").hide();
+    });
+});
+$(document).ready(function(){
+    $(".mobilenavopen").click(function(){
+        $(".mobilenav").show();
+    });
+    $(".mobilenavclose").click(function(){
+        $(".mobilenav").hide();
+    });
+    $(".loginopen").click(function(){
+        $(".login").show();
+    });
+    $(".loginclose").click(function(){
+        $(".login").hide();
+    });
+    $(".left1").click(function(){
+        $(".mnavsub1").show();
+    });
+    $(".mnavsub1close").click(function(){
+        $(".mnavsub1").hide();
+    });
+    $(".left2").click(function(){
+        $(".mnavsub2").show();
+    });
+    $(".mnavsub2close").click(function(){
+        $(".mnavsub2").hide();
+    });
+    $(".left3").click(function(){
+        $(".mnavsub3").show();
+    });
+    $(".mnavsub3close").click(function(){
+        $(".mnavsub3").hide();
+    });
+    $(".left4").click(function(){
+        $(".mnavsub4").show();
+    });
+    $(".mnavsub4close").click(function(){
+        $(".mnavsub4").hide();
+    });
+    $(".left5").click(function(){
+        $(".mnavsub5").show();
+    });
+    $(".mnavsub5close").click(function(){
+        $(".mnavsub5").hide();
+    });
+    $(".right1").click(function(){
+        $(".mnavsub6").show();
+    });
+    $(".mnavsub6close").click(function(){
+        $(".mnavsub6").hide();
+    });
+    $(".right2").click(function(){
+        $(".mnavsub7").show();
+    });
+    $(".mnavsub7close").click(function(){
+        $(".mnavsub7").hide();
+    });
+    $(".right3").click(function(){
+        $(".mnavsub8").show();
+    });
+    $(".mnavsub8close").click(function(){
+        $(".mnavsub8").hide();
+    });
+    $(".right4").click(function(){
+        $(".mnavsub9").show();
+    });
+    $(".mnavsub9close").click(function(){
+        $(".mnavsub9").hide();
+    });
+    $(".right5").click(function(){
+        $(".mnavsub10").show();
+    });
+    $(".mnavsub10close").click(function(){
+        $(".mnavsub10").hide();
+    });
+    $(".right6").click(function(){
+        $(".mnavsub11").show();
+    });
+    $(".mnavsub11close").click(function(){
+        $(".mnavsub11").hide();
+    });
+    $(".right7").click(function(){
+        $(".mnavsub12").show();
+    });
+    $(".mnavsub12close").click(function(){
+        $(".mnavsub12").hide();
+    });
+    $(".right8").click(function(){
+        $(".mnavsub13").show();
+    });
+    $(".mnavsub13close").click(function(){
+        $(".mnavsub13").hide();
+    });
+});
+$(document).ready(function(){
+    $(".contentbox ul li").click(function(){
+        $(this).addClass('on').siblings().removeClass('on');
+        $("#"+$(this).data('id')).addClass('on').siblings().removeClass('on');
+    });
+});
+$(document).ready(function(){
+    if($(window).width() < 641){
+        $('.slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        });
+    }
+    else if($(window).width() > 640){
+        $('.slider').slick('unslick');
+    }
+});
