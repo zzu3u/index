@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+        <title>국립현대미술관</title>
+        <link rel="stylesheet" type="text/css" href="../css/MMCA.css">
+        <link rel="stylesheet" media="all and (max-width:640px)" href="../css/MMCAmobile.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link type="image/x-icon" href="../images/main/titleicon.png" rel="shortcut icon">
+        <link rel="stylesheet" type="text/css" href="../lib/slick-1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="../lib/slick-1.8.1/slick/slick-theme.css"/>
+    </head>
+    <body>
+        <header>
+            <div class="inner">
+                <a href="MMCA.html">
+                    <div class="logo"></div>
+                </a>
+                <div class="lang">EN</div>
+                <div class="menu"><i class="headermenu fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>    
+        </header>
+        <div class="sec1">
+                <div class="pt">
+                    <ul class="images">
+                        <li>
+                            <img src="../images/main/main.jpg">
+                        </li>
+                        <li>
+                            <img src="../images/main/main2.jpg">
+                        </li>
+                        <li>
+                            <img src="../images/main/main3.jpg">
+                        </li>
+                    </ul>
+                    <div class="btnSlide">
+                        <div class="btnSlide_prev off"></div>
+                        <div class="btnSlide_next"></div>
+                    </div>
+                    <div class="box inner">
+                        <div class="smallbox">
+                            <div class="txt">
+                                <h2>과천</h2>
+                                <h4>오늘 관람 시간</h4>
+                                <h4>10:00~18:00</h4>
+                            </div>
+                            <div class="reser">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                <h4>예약하기</h4>
+                            </div>
+                        </div>
+                        <div class="smallbox">
+                            <div class="txt">
+                                <h2>서울</h2>
+                                <h4>오늘 관람 시간</h4>
+                                <h4>10:00~18:00</h4>
+                            </div>
+                            <div class="reser">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                <h4>예약하기</h4>
+                            </div>
+                        </div>
+                        <div class="smallbox">
+                            <div class="txt">
+                                <h2>덕수궁</h2>
+                                <h4>오늘 관람 시간</h4>
+                                <h4>10:00~18:00</h4>
+                            </div>
+                            <div class="reser">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                <h4>예약하기</h4>
+                            </div>
+                        </div>
+                        <div class="smallbox">
+                            <div class="txt">
+                                <h2>청주</h2>
+                                <h4>오늘 관람 시간</h4>
+                                <h4>10:00~18:00</h4>
+                            </div>
+                            <div class="reser">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                <h4>예약하기</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rpopup">
+                    <select class="month">
+                        <option>9월</option>
+                        <option>10월</option>
+                        <option>11월</option>
+                        <option>12월</option>
+                        <option>1월</option>
+                        <option>2월</option>
+                        <option>3월</option>
+                        <option>4월</option>
+                        <option>5월</option>
+                        <option>6월</option>
+                        <option>7월</option>
+                        <option>8월</option>
+                    </select>
+                    <select class="date">
+                        <option>1일</option>
+                        <option>2일</option>
+                        <option>3일</option>
+                        <option>4일</option>
+                        <option>5일</option>
+                        <option>6일</option>
+                        <option>7일</option>
+                        <option>8일</option>
+                        <option>9일</option>
+                        <option>10일</option>
+                        <option>11일</option>
+                        <option>12일</option>
+                        <option>13일</option>
+                        <option>14일</option>
+                        <option>15일</option>
+                        <option>16일</option>
+                        <option>17일</option>
+                        <option>18일</option>
+                        <option>19일</option>
+                        <option>20일</option>
+                        <option>21일</option>
+                        <option>22일</option>
+                        <option>23일</option>
+                        <option>24일</option>
+                        <option>25일</option>
+                        <option>26일</option>
+                        <option>27일</option>
+                        <option>28일</option>
+                        <option>29일</option>
+                        <option>30일</option>
+                    </select>
+                    <div class="name">
+                        성함<input>
+                    </div>
+                    <div class="phone">
+                        연락처<input>
+                    </div>
+                    <div class="rcheck">예약하기</div>
+                    <div class="rclose">닫기</div>
+                </div>
+                <div class="rfinish">예약이 완료되었습니다.
+                    <div class="rrclose">닫기</div>
+                </div>
+        </div>
+        <div class="sec2" data-aos="zoom-in-up" data-aos-duration="2000">
+            <div class="inner">
+                <div class="title">What’s on?</div>
+                <div class="content slider">
+                    <div class="slide s1">
+                        <div class="pt"></div>
+                        <div class="txt">
+                            <div><h4>신나는 빛깔 마당</h4></div>
+                            <div><h6>과천</h6><h6>2020.06.18~2021.02.28</h6></div>
+                        </div>
+                    </div>
+                    <div class="slide s2">
+                        <div class="pt"></div>
+                        <div class="txt">
+                            <div><h4>MMCA 소장품 하이라이트</h4></div>
+                            <div><h6>서울</h6><h6>2020.04.06~2021.04.25</h6></div>
+                        </div>
+                    </div>
+                    <div class="slide s3">
+                        <div class="pt"></div>
+                        <div class="txt">
+                            <div><h4>미술관에書 : 근현대 서예전</h4></div>
+                            <div><h6>덕수궁</h6><h6>2020.05.06~2020.08.23</h6></div>
+                        </div>
+                    </div>
+                    <div class="slide s4">
+                        <div class="pt"></div>
+                        <div class="txt">
+                            <div><h4>보존과학자 C의 하루</h4></div>
+                            <div><h6>청주</h6><h6>2020.05.26~2020.10.04</h6></div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <div class="sec3" data-aos="zoom-in-up" data-aos-duration="2000">
+            <div class="bg">
+                <div class="inner">
+                    <div class="title">Collection</div>
+                    <div class="content slider">
+                        <div class="slide s11">
+                            <div class="pt"></div>
+                            <div class="txt">
+                                <h4>YOO Youngkuk</h4>
+                                <h6>유영국</h6>
+                                <h6>작품</h6>
+                            </div>
+                        </div>
+                        <div class="slide s22">
+                            <div class="pt"></div>
+                            <div class="txt">
+                                <h4>LEE Inhwa</h4>
+                                <h6>이인화</h6>
+                                <h6>열려진 공간으로의 여행-9166</h6>
+                            </div>
+                        </div>
+                        <div class="slide s33">
+                            <div class="pt"></div>
+                            <div class="txt">
+                                <h4>SUH Seok</h4>
+                                <h6>서세옥</h6>
+                                <h6>사람들</h6>
+                            </div>
+                        </div>
+                        <div class="slide s44">
+                            <div class="pt"></div>
+                            <div class="txt">
+                                <h4>LEE Myoungho</h4>
+                                <h6>이명호</h6>
+                                <h6>나무 1</h6>
+                            </div>
+                        </div>
+                    </div>
+                <div class="more">Load more<i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+                </div>    
+            </div>    
+        </div>
+        <div class="sec4">
+            <div class="inner">
+                <div class="title">Online gallery</div>
+                <div class="full">
+                    <iframe src="https://www.youtube.com/embed/yFi-Q6d8u68" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="more">Load more<i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+                </div>
+            </div>
+        </div>
+        <a href="#">
+            <div class="top"><i class="fa fa-arrow-up" aria-hidden="true"></i></div>
+        </a>
+        <div class="popup inner" style="display: none;">
+            <i class="close fa fa-times" aria-hidden="true"></i>
+            <div>거리두기 관람 무료 재개관</div>
+            <div>화요일~일요일, 10:00~18:00</div>
+            <div>
+                <span>서울·덕수궁/수요일·토요일</span>
+                <span>야간개장 18:00~21:00</span>
+            </div>
+            <div>※거리두기 관람에 저해하지 않는 범위 내에서 현장접수 가능합니다※</div>
+            <div>
+                <input type="checkbox" id="pop_day"/>
+                <label for="pop_day" style="display: none;"></label>
+                <a href="#" class="btn_close">오늘하루 그만보기</a>
+            </div>
+        </div>
+        <div class="headernav">
+            <ul class="menu">
+                <li class="list1">관람
+                    <ul class="sub1">
+                        <li>관람</li>
+                        <li><a href="MMCA_sub.html">과천</a></li>
+                        <li><a href="MMCA_sub2.html">서울</a></li>
+                        <li>덕수궁</li>
+                        <li>청주</li>
+                        <li>캘린더</li>
+                        <li>FAQ</li>
+                    </ul>
+                </li>
+                <li class="list2">프로그램
+                    <ul class="sub2">
+                        <li>프로그램</li>
+                        <li>전시</li>
+                        <li>전시해설</li>
+                        <li>전시예약</li>
+                    </ul>
+                </li>  
+                <li class="list3">교육
+                    <ul class="sub3">
+                        <li>교육</li>
+                        <li>미술관 교육소개</li>
+                        <li>어린이 미술관</li>
+                        <li>참여신청</li>
+                        <li>교육 자료실</li>
+                        <li>교육 사진</li>
+                    </ul>
+                </li>
+                <li class="list4">소장품
+                    <ul class="sub4">
+                        <li>소장품</li>
+                        <li>소장품 둘러보기</li>
+                        <li>소장품 검색하기</li>
+                    </ul>
+                </li>
+                <li class="list5">온라인미술관
+                    <ul class="sub5">
+                        <li>온라인미술관</li>
+                        <li>온라인미술관 바로가기</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="login">
+                <li>로그인</li>
+                <li>멤버십</li>
+                <li>SNS</li>
+                <li class="searchopen">검색</li>
+            </ul>
+        </div>
+        <footer data-aos="zoom-in-up" data-aos-duration="2000">
+            <div class="inner">
+                <div class="icon">
+                    <a href="https://www.facebook.com/mmcakorea" target="_blank">
+                        <div></div>
+                    </a>
+                    <a href="https://twitter.com/mmcakorea" target="_blank">
+                        <div></div>
+                    </a>
+                    <a href="https://www.instagram.com/accounts/login/?next=/mmcakorea/" target="_blank">
+                        <div></div>
+                    </a>
+                    <a href="https://tv.naver.com/mmca" target="_blank">
+                        <div></div>
+                    </a>
+                    <a href="https://www.youtube.com/user/MMCAKorea" target="_blank">
+                        <div></div>
+                    </a>    
+                </div>
+                <div class="infor">
+                    <div>
+                        <span>이용약관</span>
+                        <span>저작권정책</span>
+                        <span>국민신문고</span>
+                        <span>개인정보처리방침</span>
+                        <span>정보공개</span>
+                    </div>
+                    <div>
+                        <span>대표자 윤범모</span>
+                        <span>사업자등록번호 138-83-00313</span>
+                    </div>
+                    <div>Copyright (c)2018 National Museum and Contemporary Art, Korea All rights reserved.</div>
+                    <div>
+                        <span>대표전화 </span>
+                        <span>(과천) 02-2188-6000, (서울) 02-3701-9500, (덕수궁) 02-2022-0600, (청주) 043-261-1400</span>
+                    </div>
+                    <div>
+                        <div class="mmca"></div>
+                        <div class="wa"></div>
+                    </div>
+                </div>
+                <div class="fmenu"><i class="fa fa-arrow-up"   aria-hidden="true"></i>
+                </div>
+                <div class="fnav">
+                    <div class="fdown"><i class="fa fa-arrow-down" aria-hidden="true"></i>
+                    </div>
+                    <ul class="mn">
+                        <li>미술관 소개
+                            <ul class="sb">
+                                <li>인사말</li>
+                                <li>연혁</li>
+                                <li>조직과 미션</li>
+                                <li>4관 및 하부관리기구</li>
+                                <li>MI</li>
+                                <li>미술관 연보</li>
+                            </ul>
+                        </li>
+                        <li>연구와 출판
+                            <ul class="sb">
+                                <li>아카이브와 도서</li>
+                                <li>MMCA연구</li>
+                                <li>레지던시</li>
+                                <li>보존과학</li>
+                                <li>출판</li>
+                            </ul>
+                        </li>
+                        <li>후원
+                            <ul class="sb">
+                                <li>국립현대미술관 후원</li>
+                                <li>국립현대미술관을 후원해주신분들</li>
+                            </ul>
+                        <li>자원봉사
+                            <ul class="sb">
+                                <li>활동분야</li>
+                                <li>모집대상 및 방법안내</li>
+                                <li>제공사항</li>
+                                <li>운영형태</li>
+                            </ul>
+                        </li>
+                        <li>채용
+                            <ul class="sb">
+                                <li>채용공고</li>
+                            </ul>
+                        </li>
+                        <li>미술관 대관
+                            <ul class="sb">
+                                <li>촬영허가</li>
+                                <li>미술작품 복제허가</li>
+                                <li>시설물 대관 허가</li>
+                            </ul>
+                        </li>
+                        <li>MMCA뉴스
+                            <ul class="sb">
+                                <li>둘러보기</li>
+                                <li>검색하기</li>
+                                <li>구독 및 뉴스레터 신청하기</li>
+                            </ul>
+                        </li>
+                        <li>불편신고접수
+                            <ul class="sb">
+                                <li>전자민원 묻고답하기</li>
+                                <li>정책참여</li>
+                                <li>공무원 행동강령</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <div class="menubg"></div>
+        <div class="input">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input class="searchbox" type="text" name="search" 검색어를 입력하세요. >
+
+        </div>
+        <div class="mobilenavopen">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="mobilenav">
+            <div class="mobilenavclose">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div class="loginopen">
+                <i class="fa fa-user-o" aria-hidden="true"></i>
+            </div>
+            <div class="mnavleft">
+                <div class="left1">관람</div>
+                <div class="left2">프로그램</div>
+                <div class="left3">교육</div>
+                <div class="left4">소장품</div>
+                <div class="left5">온라인미술관</div>
+            </div>
+            <div class="mnavright">
+                <div class="right1">미술관소개</div>
+                <div class="right2">연구와출판</div>
+                <div class="right3">후원</div>
+                <div class="right4">자원봉사</div>
+                <div class="right5">채용</div>
+                <div class="right6">미술관대관</div>
+                <div class="right7">MMCA뉴스</div>
+                <div class="right8">불편신고접수</div>
+            </div>
+            <div class="login">
+                <div class="loginclose">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                <div>로그인</div>
+                <div>멤버십</div>
+                <div>SNS</div>
+                <div>검색</div>
+            </div>
+        </div>
+        <div class="mnavsub1">
+            <div class="mnavsub1close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div>관람</div>
+            <div><a href="MMCA_sub.html">과천</a></div>
+            <div><a href="MMCA_sub2.html">서울</a></div>
+            <div>덕수궁</div>
+            <div>청주</div>
+            <div>캘린더</div>
+            <div>FAQ</div>
+        </div>
+        <div class="mnavsub2">
+            <div class="mnavsub2close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div>프로그램</div>
+            <div>전시</div>
+            <div>전시해설</div>
+            <div>전시예약</div>
+        </div>
+        <div class="mnavsub3">
+            <div class="mnavsub3close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div>교육</div>
+            <div>미술관 교육소개</div>
+            <div>어린이 미술관</div>
+            <div>참여신청</div>
+            <div>교육 자료실</div>
+            <div>교육 사진</div>
+        </div>
+        <div class="mnavsub4">
+            <div class="mnavsub4close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div>소장품</div>
+            <div>소장품 둘러보기</div>
+            <div>소장품 검색하기</div>
+        </div>
+        <div class="mnavsub5">
+            <div class="mnavsub5close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div>온라인미술관</div>
+            <div>온라인미술관 바로가기</div>
+        </div>
+        <div class="mnavsub6">
+            <div class="mnavsub6close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div>미술관소개</div>
+            <div>인사말</div>
+            <div>연혁</div>
+            <div>조직과 미션</div>
+            <div>4관 및 하부관리기구</div>
+            <div>MI</div>
+            <div>미술관 연보</div>
+        </div>
+        <div class="mnavsub7">
+            <div class="mnavsub7close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div>연구와출판</div>
+            <div>아카이브와 도서</div>
+            <div>MMCA연구</div>
+            <div>레지던시</div>
+            <div>보존과학</div>
+            <div>출판</div>
+        </div>
+        <div class="mnavsub8">
+            <div class="mnavsub8close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div>후원</div>
+            <div>국립현대미술관 후원</div>
+            <div>국립현대미술관을 후원해주신분들</div>
+        </div>
+        <div class="mnavsub9">
+            <div class="mnavsub9close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div>자원봉사</div>
+            <div>활동분야</div>
+            <div>모집대상 및 방법안내</div>
+            <div>제공사항</div>
+            <div>운영형태</div>
+        </div>
+        <div class="mnavsub10">
+            <div class="mnavsub10close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div>채용</div>
+            <div>채용공고</div>
+        </div>
+        <div class="mnavsub11">
+            <div class="mnavsub11close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div>미술관대관</div>
+            <div>촬영허가</div>
+            <div>미술작품 복제허가</div>
+            <div>시설물 대관허가</div>
+        </div>
+        <div class="mnavsub12">
+            <div class="mnavsub12close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div>MMCA뉴스</div>
+            <div>둘러보기</div>
+            <div>검색하기</div>
+            <div>구독 및 뉴스레터 신청하기</div>
+        </div>
+        <div class="mnavsub13">
+            <div class="mnavsub13close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div>불편신고접수</div>
+            <div>전자민원 묻고답하기</div>
+            <div>정책참여</div>
+            <div>공무원 행동강령</div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="../js/jquery.cookie.js"></script>
+        <script type="text/javascript" src="../js/mmca.js"></script>
+        <script src="../lib/slick-1.8.1/slick/slick.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>
