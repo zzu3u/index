@@ -214,121 +214,87 @@ header{
     font-size: 15px;
     font-weight: 100;
 }
-.slider .slick-arrow{
-    position: absolute;
-    top: 40%;
-    width: 25%;
-    height: 30%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    z-index: 20;
-}
-.slider .slick-arrow::before,
-.slider .slick-arrow::after{
-    color: #ccc;
-    font-size: 2rem;
-}
-.slick-prev{
-    left: 0px;
-    width: unset;
-    height: unset;
-}
-.slick-next{
-    right: 0px;
-    width: unset;
-    height: unset;
-}
 .sec2{
     width: 100%;
     height: auto;
 }
 .sec2 .title{
     width: 100%;
-    height: auto;
+    height: 50px;
     font-size: 26px;
     line-height: 50px;
+    text-align: left;
     text-align: center;
-    margin-top: 20px;
+    padding: 20px;
 }
 .sec2 .content{
     margin: 0;
-    width: 100%;
-    height: 400px;
-    flex-direction: row;
+    height: 1200px;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.sec2 .content .slide{
+.sec2 .content .div{
     width: 70%;
     height: 25%;
+    margin-top: 10%;
 }
-.sec2 .content .slide .pt{
-    height: 260px;
-    width: 80%;
-    margin: 0 auto;
+.sec2 .content .div .pt{
+    height: 80%;
 }
-.sec2 .content .s1 .pt{
+.sec2 .content .div:nth-of-type(1) .pt{
     background: url(../images/main/sec2_1mobile.jpg)0 0 no-repeat;
     background-size: cover;
 }
-.sec2 .content .s2 .pt{
+.sec2 .content .div:nth-of-type(2) .pt{
     background: url(../images/main/sec2_2mobile.jpg)0 0 no-repeat;
     background-size: cover;
 }
-.sec2 .content .s3 .pt{
+.sec2 .content .div:nth-of-type(3) .pt{
     background: url(../images/main/sec2_3mobile.jpg)0 0 no-repeat;
     background-size: cover;
 }
-.sec2 .content .s4 .pt{
+.sec2 .content .div:nth-of-type(4) .pt{
     background: url(../images/main/sec2_4mobile.jpg)0 0 no-repeat;
     background-size: cover;
 }
-.sec2 .content .slide .txt{
+.sec2 .content .div .txt{
     height: auto;
     padding-top: 0;
 }
-.sec2 .content .slide .txt h4{
+.sec2 .content .div .txt h4{
     font-size: 18px;
+    padding-top: 3px;
+}
+.sec2 .content .div .txt div:nth-of-type(2){
     padding: 0;
-    margin: 20px 0 0 0;
-    text-align: center;
 }
-.sec2 .content .slide .txt div:nth-of-type(2){
-    padding: 0;
-    width: 70%;
-    margin: 0 auto;
-}
-.sec2 .content .s3 .txt div:nth-of-type(2){
-    width: 75%;
-}
-.sec2 .content .slide .txt h6{
+.sec2 .content .div .txt h6{
     font-size: 16px;
-    margin: 0;
 }
-.sec2 .content .slide .txt h6:nth-of-type(1)::after{
+.sec2 .content .div .txt h6:nth-of-type(1)::after{
     width: 3px;
     height: 16px;
     background-color: #f1a205;
     position: absolute;
     content: "";
-    left: 35px;
+    left: 33px;
     top: 2px;
 }
-.sec2 .content .s3 .txt h6:nth-of-type(1)::after{
-    left: 47px;
+.sec2 .content .div:nth-of-type(3) .txt h6:nth-of-type(1)::after{
+    left: 45px;
 }
 .sec3{
     width: 100%;
     height: auto;
 }
 .sec3 .inner{
-    height: auto;
+    height: 1300px;
 }
 .sec3 .bg{
     width: 100%;
-    height: 500px;
+    height: 1250px;
     background: url(../images/main/sec3bgmobile.jpg)0 0 no-repeat;
-    background-size: cover;
 }
 .sec3 .title{
     width: 100%;
@@ -341,51 +307,51 @@ header{
 .sec3 .content{
     margin: 0;
     padding: 0;
-    height: 400px;
-    flex-direction: row;
+    height: 1200px;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.sec3 .content .slide{
+.sec3 .content .div{
     width: 65%;
     height: 22%;
 }
-.sec3 .content .slide .pt{
-    width: 80%;
-    height: 240px;
-    margin: 0 auto;
-    border-radius: 10px;
+.sec3 .content .div .pt{
+    width: 240px;
+    height: 80%;
+    
 }
-.sec3 .content .s11 .pt{
+.sec3 .content .div:nth-of-type(1) .pt{
     background: url(../images/main/sec3_1.jpg)0 0 no-repeat;
     background-size: cover;
 }
-.sec3 .content .s22 .pt{
+.sec3 .content .div:nth-of-type(2) .pt{
     background: url(../images/main/sec3_2.jpg)0 0 no-repeat;
     background-size: cover;
 }
-.sec3 .content .s33 .pt{
+.sec3 .content .div:nth-of-type(3) .pt{
     background: url(../images/main/sec3_3.jpg)0 0 no-repeat;
     background-size: cover;
 }
-.sec3 .content .s44 .pt{
+.sec3 .content .div:nth-of-type(4) .pt{
     background: url(../images/main/sec3_4.jpg)0 0 no-repeat;
     background-size: cover;
 
 }
-.sec3 .content .slide .txt{
+.sec3 .content .div:nth-of-type(1) .pt,
+.sec3 .content .div:nth-of-type(3) .pt{
+    margin: 0;
+}
+.sec3 .content .div .txt{
     height: auto;
     padding-top: 0;
 }
-.sec3 .content .slide .txt h4{
+.sec3 .content .div .txt h4{
     font-size: 18px;
-    margin: 20px 0 0 0;
-    text-align: center;
+    padding-top: 3px;
 }
-.sec3 .content .slide .txt h6{
-    font-size: 18px;
-    text-align: center;
-    margin: 0;
+.sec3 .content .div .txt h6{
+    font-size: 16px;
 }
 .sec3 .more{
     width: 50%;
@@ -393,7 +359,7 @@ header{
     font-size: 18px;
     line-height: 30px;
     position: absolute;
-    top: 85%;
+    top: 96%;
     left: 25%;
 }
 .sec4{
@@ -402,7 +368,7 @@ header{
 }
 .sec4 .inner{
     width: 100%;
-    height: 400px;
+    height: auto;
 }
 .sec4 .title{
     width: 100%;
@@ -410,12 +376,11 @@ header{
     font-size: 26px;
     line-height: 50px;
     text-align: center;
-    padding: 20px;
+    padding: 0;
 }
 .sec4 .full{
-    height: 300px;
-    margin: 10% 0 0 0;
-    padding: 0;
+    height: 260px;
+    margin: 0;
 }
 .full iframe{
     width: 90%;
@@ -433,7 +398,7 @@ header{
     position: relative;
     top: unset;
     left: unset;
-    margin-top: 30px;
+    margin-top: 5px;
     margin-left: 25%;
 }
 a .top{
