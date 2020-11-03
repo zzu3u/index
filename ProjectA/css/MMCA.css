@@ -4,7 +4,7 @@
 body{
     padding: 0;
     margin: 0;
-    min-width: 1080px;
+    min-width: 1280px;
     font-family: 'Jua', sans-serif;
 }
 /* div{
@@ -575,40 +575,40 @@ header .menu i:hover{
     justify-content: space-around;
     margin-top: 30px;
 }
-.sec2 .content .slide{
+.sec2 .content .div{
     width: 22%;
     height: 520px;
 }
-.sec2 .content .slide .pt{
+.sec2 .content .div .pt{
     height: 400px;
 }
-.sec2 .content .s1 .pt{
+.sec2 .content .div:nth-of-type(1) .pt{
     background: url(../images/main/sec2_1.jpg)0 0 no-repeat;
 }
-.sec2 .content .s2 .pt{
+.sec2 .content .div:nth-of-type(2) .pt{
     background: url(../images/main/sec2_2.jpg)0 0 no-repeat;
 }
-.sec2 .content .s3 .pt{
+.sec2 .content .div:nth-of-type(3) .pt{
     background: url(../images/main/sec2_3.jpg)0 0 no-repeat;
 }
-.sec2 .content .s4 .pt{
+.sec2 .content .div:nth-of-type(4) .pt{
     background: url(../images/main/sec2_4.jpg)0 0 no-repeat;
 }
-.sec2 .content .slide .txt{
+.sec2 .content .div .txt{
     height: 100px;
     padding-top: 20px;
 }
-.sec2 .content .slide .txt h4{
+.sec2 .content .div .txt h4{
     padding: 0;
     margin: 0;
     font-size: 24px;
     font-weight: 500;
     color: #221e1f;
 }
-.sec2 .content .s1 .pt:hover,
-.sec2 .content .s2 .pt:hover,
-.sec2 .content .s3 .pt:hover,
-.sec2 .content .s4 .pt:hover{
+.sec2 .content .div:nth-of-type(1) .pt:hover,
+.sec2 .content .div:nth-of-type(2) .pt:hover,
+.sec2 .content .div:nth-of-type(3) .pt:hover,
+.sec2 .content .div:nth-of-type(4) .pt:hover{
     cursor: pointer;
     -webkit-animation-name: on;
     animation-name: on;
@@ -692,12 +692,12 @@ header .menu i:hover{
       transform: translate3d(0, 0, 0);
     }
   }
-.sec2 .content .slide .txt div:nth-of-type(2){
+.sec2 .content .div .txt div:nth-of-type(2){
     display: flex;
     flex-direction: row;
     padding-top: 3px;
 }
-.sec2 .content .slide .txt h6{
+.sec2 .content .div .txt h6{
     padding: 0;
     margin: 0;
     font-size: 18px;
@@ -705,7 +705,7 @@ header .menu i:hover{
     position: relative;
     color: #221e1f;
 }
-.sec2 .content .slide .txt h6:nth-of-type(1)::after{
+.sec2 .content .div .txt h6:nth-of-type(1)::after{
     width: 3px;
     height: 16px;
     background-color: #f1a205;
@@ -714,10 +714,10 @@ header .menu i:hover{
     left: 36px;
     top: 2px;
 }
-.sec2 .content .s3 .txt h6:nth-of-type(1)::after{
+.sec2 .content .div:nth-of-type(3) .txt h6:nth-of-type(1)::after{
     left: 50px;
 }
-.sec2 .content .slide .txt h6:nth-of-type(2){
+.sec2 .content .div .txt h6:nth-of-type(2){
     padding-left: 20px;
 }
 .sec3{
@@ -747,18 +747,18 @@ header .menu i:hover{
     justify-content: space-around;
     padding-top: 20px;
 }
-.sec3 .content .slide{
+.sec3 .content .div{
     width: 22%;
     height: 520px;
 }
-.sec3 .content .slide .pt{
+.sec3 .content .div .pt{
     height: 300px;
     border-radius: 10px;
 }
-.sec3 .content .s11 .pt:hover,
-.sec3 .content .s22 .pt:hover,
-.sec3 .content .s33 .pt:hover,
-.sec3 .content .s44 .pt:hover{
+.sec3 .content .div .pt:nth-of-type(1):hover,
+.sec3 .content .div .pt:nth-of-type(2):hover,
+.sec3 .content .div .pt:nth-of-type(3):hover,
+.sec3 .content .div .pt:nth-of-type(4):hover{
     -webkit-animation-name: collection;
     animation-name: collection;
     -webkit-animation-duration: 2s;
@@ -840,37 +840,37 @@ header .menu i:hover{
       transform: translate3d(0, 0, 0);
     }
   }
-.sec3 .content .s11 .pt{
+.sec3 .content .div:nth-of-type(1) .pt{
     background: url(../images/main/sec3_11.jpg)0 0 no-repeat;
     background-size: contain;
 }
-.sec3 .content .s22 .pt{
+.sec3 .content .div:nth-of-type(2) .pt{
     background: url(../images/main/sec3_22.jpg)0 0 no-repeat;
     background-size: contain;
 }
-.sec3 .content .s33 .pt{
+.sec3 .content .div:nth-of-type(3) .pt{
     background: url(../images/main/sec3_33.jpg)0 0 no-repeat;
     background-size: contain;
 }
-.sec3 .content .s44 .pt{
+.sec3 .content .div:nth-of-type(4) .pt{
     background: url(../images/main/sec3_44.jpg)0 0 no-repeat;
     background-size: contain;
 }
-.sec3 .content .s11 .pt,
-.sec3 .content .s33 .pt{
+.sec3 .content .div:nth-of-type(1) .pt,
+.sec3 .content .div:nth-of-type(3) .pt{
     margin-top: 120px;
 }
-.sec3 .content .slide .txt{
+.sec3 .content .div .txt{
     height: 100px;
     padding-top: 20px;
 }
-.sec3 .content .slide .txt h4{
+.sec3 .content .div .txt h4{
     font-size: 24px;
     font-weight: 500;
     margin: 0;
     color: #221e1f;
 }
-.sec3 .content .slide .txt h6{
+.sec3 .content .div .txt h6{
     font-size: 18px;
     font-weight: 500;
     margin: 0;
@@ -879,7 +879,7 @@ header .menu i:hover{
 .sec3 .more{
     width: 276px;
     height: 58px;
-    margin: 25px auto 0;
+    margin: 0 auto;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.6);
     box-shadow: 0px 3px 5px #72797d;
