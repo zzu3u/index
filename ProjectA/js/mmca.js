@@ -225,14 +225,3 @@ $(document).ready(function(){
         $(".rfinish").hide();
     });
 });
-$(document).ready(function(){
-    if($(window).width() < 641){
-        $('.slider').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-        });
-    }
-    else if($(window).width() > 640){
-        $('.slider').slick('unslick');
-    }
-});
